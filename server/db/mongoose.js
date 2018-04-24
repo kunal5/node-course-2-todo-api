@@ -5,14 +5,14 @@ var connectPath, options;
 //Check if we are on Heroku
 if(process.env.PORT){
  connectPath = process.env.MONGODB_URI;
- // options= {
- //     auth: {
- //         user: 'kunal12',
- //         password: 'apple1234'
- //     }
- // }
-}
-mongoose.connect(connectPath, options);
+//  options= {
+//      auth: {
+//          user: 'kunal12',
+//          password: 'apple1234'
+//      }
+//  }
+ }
+mongoose.connect(connectPath);
 module.exports={
   mongoose
 };
